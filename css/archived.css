@@ -1,0 +1,158 @@
+header {
+  position: relative;
+
+}
+
+.b-img {
+  height: 100vw;
+  overflow: hidden;
+}
+
+.b-img .b-img-ms {
+  display: none;
+}
+
+.b-img .b-img-ls {
+  display: none;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin: 0;
+  padding: .5em 0;
+  background-image: linear-gradient(to top, transparent, rgba(0,0,0,.5));
+  font-family: Itim, cursive;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav li {
+  float: left;
+  width: 100%;
+}
+
+nav a {
+  background-color: #019aa8;
+  padding: .5rem;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #006775;
+  font-family: Itim, cursive;
+}
+
+nav a:hover {
+  background-color: #006775;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav li {
+
+  }
+
+  nav a {
+    background-color: red;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .b-img {
+    height: auto;
+    max-height: 300px;
+    vertical-align: middle
+  }
+
+  .b-img .b-img-ss {
+    display: none;
+  }
+
+  .b-img .b-img-ms {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav li {
+    width: 25%;
+    border-right: 1px solid #006775;
+  }
+
+  nav a {
+    background-color: green;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .b-img {
+    max-height: 320px
+  }
+
+  .b-img .b-img-ms {
+    display: none;
+  }
+
+  .b-img .b-img-ls {
+    display: block;
+  }
+
+  header {
+    background-color: #019aa8;
+    overflow: hidden;
+  }
+
+  h1 {
+    position: relative;
+    top: none;
+    text-align: left;
+    width: auto;
+    margin: 0 3rem 0 1.5rem;
+    padding: 0;
+    background-image: none;
+    display: inline-block;
+    font-size: 2.275rem;
+    vertical-align: middle;
+  }
+
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    padding-right: 1.5rem;
+  }
+
+  nav li {
+    float: none;
+    display: inline-block;
+    width: auto;
+    border-right: none;
+  }
+
+  nav a {
+    background-color: #019aa8;
+    border-bottom: none;
+    padding: .75rem 1rem;
+  }
+
+}
