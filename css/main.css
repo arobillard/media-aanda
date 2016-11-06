@@ -133,8 +133,9 @@ nav li ul a:hover {
 
 /* ----- =Main ----- */
 
-main {
+main > section {
   padding: 1rem;
+  border-bottom: 20px solid rgba(0, 114, 128, .5);
 }
 
 h2 {
@@ -145,37 +146,51 @@ h2 {
   border-bottom: 1px solid rgba(1, 154, 168, .5);
 }
 
-.stories h3 {
+main section h3 {
   font-family: Itim, cursive;
   color: rgba(1, 154, 168, .75);
 
   margin: 0;
 }
 
-.stories p time {
+main section p time {
   font-size: .875rem;
   font-style: italic;
   color: #777;
 }
 
-.stories p {
+main section p {
   margin: 0 0 1rem;
 }
 
-.stories p a {
+main section p a {
   color: rgba(1, 154, 168, 1);
   text-decoration: none;
 }
 
-.stories p a:hover {
+main section p a:hover {
   color: rgba(1, 154, 168, .5);
   text-decoration: underline;
 }
 
-.stories p:last-child {
+main section p:last-child {
   border-bottom: 1px solid #aaa;
   padding: 0 0 1rem;
+}
 
+main section figure {
+  margin: 0;
+  position: relative;
+}
+
+main section figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(1, 154, 168, .5);
+  padding: .5rem;
+  color: #fff;
+  font-weight: 100;
 }
 
 @media only screen and (min-width: 25em) {
