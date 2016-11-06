@@ -17,11 +17,22 @@
       <img class="b-img-ls" src="https://placehold.it/900x300" alt="Cutie">
     </div>
     <div class="banner">
-      <h1>Amber is a Cutie</h1>
+      <h1>Adam and Amber</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#stories">Stories</a></li>
+          <li class="drop-menu">
+            <input type="checkbox" class="nav-check" id="nav-check">
+            <!-- This is the button we’d click to open/close the navigation -->
+            <label class="nav-label" for="nav-check">Stories</label>
+            <div class="drop-down">
+              <ul>
+                <li><a href="#stories">See All</a></li>
+                <li><a href="#scrubs">The Beginning - <i>Scrubs</i></a></li>
+                <li><a href="#putting">First Real Date - <i>Putting Edge</i></a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="#">Pictures</a></li>
           <li><a href="#">More...</a></li>
         </ul>
@@ -34,12 +45,15 @@
     <section id="stories">
       <h2>Stories</h2>
       <article>
-        <h3>The Beginning - <i>Scrubs</i></h3>
+        <h3 id="scrubs">The Beginning - <i>Scrubs</i></h3>
+        <p><time datetime="2016-10-20">Thursday October 20, 2016</time></p>
         <p>Amber and Adam met while working together as Resident Advisors at Algonquin College. They were assigned to work together in MacDonald House (AKA the Best House) and frequently worked together as duty partners.</p>
         <p>After a few months of working together the two realized they are both rather wacky and silly and got along really well. They had discussed similar Netflix interests and were both interested in watching the show <i>Scrubs</i>. One night, Adam invited Amber up to his room to watch <i>Scrubs</i> together and the rest is history.</p>
       </article>
       <article>
-        <h3>First Real Date - <i>Putting Edge</i></h3>
+        <h3 id="putting">First Real Date - <i>Putting Edge</i></h3>
+        <p><time datetime="2016-11-05">Saturday November 5, 2016</time></p>
+        <img src="images/pe-logo.png" alt="Putting Edge">
         <p>After a few weeks of spending time together and getting to know  each other, they had the opportunity to get to go on their first real date. They went to <a href="http://www.hardstonesgrill.ca/contact">Hard Stones Grill</a> for dinner, looked at some cute animals at <a href="http://stores.petsmart.ca/915">PetSmart</a> and then went glow in the dark mini-putting at <a href="http://www.puttingedge.com/ottawa/#admission">Putting Edge</a>.
     </section>
   </main>
