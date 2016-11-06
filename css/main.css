@@ -30,8 +30,12 @@ img {
 
 header {
   overflow: hidden;
-  max-height: 175vw;
   position: relative;
+}
+
+.b-img {
+  max-height: 100vw;
+  overflow: hidden;
 }
 
 .b-img-ms {
@@ -43,10 +47,8 @@ header {
 }
 
 .banner {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  background-color: rgba(1, 154, 168, .5);
+  background-color: rgba(1, 154, 168, 1);
   overflow: hidden;
 }
 
@@ -68,13 +70,17 @@ nav ul {
 nav li {
   float: left;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 114, 128, 1);
+}
+
+nav li:first-child {
+  border-top: 1px solid rgba(0, 114, 128, 1);
 }
 
 nav a,
 nav label {
   display: block;
   padding: .5rem 1rem;
-  background-color: rgba(1, 154, 168, .25);
 
   color: #bff;
   font-family: Itim, cursive;
@@ -82,18 +88,26 @@ nav label {
   text-decoration: none;
 }
 
+nav label {
+  cursor: pointer;
+}
+
 nav a:hover,
 nav label:hover {
-  background-color: rgba(1, 154, 168, .5);
+  background-color: rgba(0, 114, 128, 1);
+}
+
+nav li ul li:last-child {
+  border-bottom: none;
 }
 
 nav li ul a {
   padding-left: 2rem;
-  background-color: rgba(1, 154, 168, .5);
+  background-color: rgba(0, 114, 128, .5);
 }
 
 nav li ul a:hover {
-  background-color: rgba(1, 154, 168, .75);
+  background-color: rgba(0, 114, 128, .75);
 }
 
 .drop-down {
