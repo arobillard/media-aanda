@@ -159,35 +159,50 @@ main section p time {
   color: #777;
 }
 
+main section img {
+  margin: 0 0 1rem;
+}
+
 main section p {
   margin: 0 0 1rem;
 }
 
-main section p a {
+main section a {
   color: rgba(1, 154, 168, 1);
   text-decoration: none;
 }
 
-main section p a:hover {
+main section a:hover {
   color: rgba(1, 154, 168, .5);
   text-decoration: underline;
 }
 
-main section p:last-child {
+main section article > a {
   border-bottom: 1px solid #aaa;
   padding: 0 0 1rem;
+  margin: 0 0 1rem;
+  font-size: .875rem;
+  text-align: right;
+  display: block;
+}
+
+main section > a {
+  font-size: .875rem;
+  text-align: right;
+  display: block;
 }
 
 main section figure {
-  margin: 0;
-  position: relative;
+  margin: 0 0 1rem;
 }
 
-main section figcaption {
-  position: absolute;
-  bottom: 0;
+main .pictures img {
+  margin: 0;
+}
+
+main .pictures figcaption {
   width: 100%;
-  background-color: rgba(1, 154, 168, .5);
+  background-color: rgba(1, 154, 168, 1);
   padding: .5rem;
   color: #fff;
   font-weight: 100;
