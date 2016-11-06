@@ -70,11 +70,11 @@ nav ul {
 nav li {
   float: left;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 114, 128, 1);
+  border-bottom: 1px solid rgba(0, 114, 128, .5);
 }
 
 nav li:first-child {
-  border-top: 1px solid rgba(0, 114, 128, 1);
+  border-top: 1px solid rgba(0, 114, 128, .5);
 }
 
 nav a,
@@ -145,31 +145,37 @@ h2 {
   border-bottom: 1px solid rgba(1, 154, 168, .5);
 }
 
-h3 {
+.stories h3 {
   font-family: Itim, cursive;
   color: rgba(1, 154, 168, .75);
 
   margin: 0;
 }
 
-p time {
+.stories p time {
   font-size: .875rem;
   font-style: italic;
   color: #777;
 }
 
-p {
-  margin: 0 0 .5rem;
+.stories p {
+  margin: 0 0 1rem;
 }
 
-p a {
+.stories p a {
   color: rgba(1, 154, 168, 1);
   text-decoration: none;
 }
 
-p a:hover {
+.stories p a:hover {
   color: rgba(1, 154, 168, .5);
   text-decoration: underline;
+}
+
+.stories p:last-child {
+  border-bottom: 1px solid #aaa;
+  padding: 0 0 1rem;
+
 }
 
 @media only screen and (min-width: 25em) {
