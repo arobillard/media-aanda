@@ -322,4 +322,23 @@ body > footer small {
     display: none;
   }
 
+  /* ----- Medium+Main ----- */
+
+  .pictures {
+    overflow: hidden;
+  }
+
+  .pic-vertical {
+    float: left;
+    width: 50%;
+  }
+
+  .pic-left {
+    padding-right: .5rem;
+  }
+
+  .pic-right {
+    padding-left: .5rem;
+  }
+
 }
