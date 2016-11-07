@@ -29,7 +29,7 @@ img {
 /* ----- =Header ----- */
 
 header {
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
 }
 
@@ -131,6 +131,10 @@ nav li ul a:hover {
   background-color: rgba(1, 154, 168, 1);
 }
 
+.nav-med {
+  display: none;
+}
+
 /* ----- =Main ----- */
 
 main > section {
@@ -208,8 +212,114 @@ main .pictures figcaption {
   font-weight: 100;
 }
 
+/* ----- =Footer ----- */
+
+body > footer {
+  padding: 1rem;
+  background-color: rgba(1, 154, 168, 1);
+  text-align: center;
+}
+
+body > footer small {
+  display: block;
+  font-style: italic;
+  color: #bff;
+  /*text-align: center;*/
+}
+
 @media only screen and (min-width: 25em) {
 
 
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* -----Medium+Header ----- */
+
+  .banner {
+    overflow: visible;
+  }
+
+  h1 {
+    display: inline-block;
+    padding-left: 1rem;
+    vertical-align: middle;
+  }
+
+  .nav-small {
+    display: none;
+  }
+
+  .nav-med {
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+
+    vertical-align: middle;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  nav li {
+    display: inline-block;
+    float: none;
+    width: auto;
+    border-bottom: none;
+    position: relative;
+  }
+
+  nav li:first-child {
+    border-top: none;
+  }
+
+  nav a {
+    display: block;
+    padding: .5rem 1rem;
+
+    color: #bff;
+    font-family: Itim, cursive;
+    font-size: 1.125rem;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover {
+    background-color: rgba(0, 114, 128, 1);
+  }
+
+  nav li:hover .drop-down {
+    display: block;
+  }
+
+  nav li .drop-down {
+    position:absolute;
+    top: 44px;
+    z-index: 10;
+  }
+
+  nav li ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav li ul a {
+    padding-left: 1rem;
+    background-color: rgba(0, 114, 128, 1);
+    text-align: left;
+    width: 15rem;
+  }
+
+  nav li ul a:hover {
+    background-color: rgba(0, 114, 128, .75);
+  }
+
+  .drop-down {
+    display: none;
+  }
 
 }
