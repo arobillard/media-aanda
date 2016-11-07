@@ -224,7 +224,7 @@ body > footer small {
   display: block;
   font-style: italic;
   color: #bff;
-  /*text-align: center;*/
+  margin: .5rem;
 }
 
 @media only screen and (min-width: 25em) {
