@@ -158,6 +158,10 @@ h2 {
   width: 15%;
 }
 
+.icon-wrap a .icon:hover {
+  opacity: .75;
+}
+
 .icon-wrap .icon {
   height: 36px;
   margin: 0;
@@ -254,17 +258,16 @@ body > footer small {
   }
 
   h1 {
-    float: left;
-    width: 40%;
-    vertical-align: middle;
-    padding: .25rem 1rem;
-    text-align: left;
+    padding: 0;
+  }
+
+  h1 img {
+    height: 32px;
+    width: auto;
   }
 
   .nav-med {
-    float: right;;
-    width: 60%;
-    vertical-align: middle;
+    display: block;
   }
 
   nav ul {
@@ -273,13 +276,14 @@ body > footer small {
   }
 
   nav li {
-    display: inline-block;
+    float: right;
     width: 4rem;
     border-bottom: none;
   }
 
   nav li:first-child {
     border-top: none;
+    float: left;
   }
 
   /*nav li:last-child a {
