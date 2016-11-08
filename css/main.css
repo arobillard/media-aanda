@@ -72,13 +72,28 @@ nav li:first-child {
 
 nav a,
 nav label {
-  display: block;
+  display: inline-block;
   padding: .5rem 1rem;
 
   color: #bff;
   font-family: Avenir, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-decoration: none;
+}
+
+nav img {
+  height: 32px;
+  width: auto;
+  margin: 0 1rem 0 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a p,
+nav label p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 
 nav label {
