@@ -72,7 +72,7 @@ nav li:first-child {
 
 nav a,
 nav label {
-  display: inline-block;
+  display: block;
   padding: .5rem 1rem;
 
   color: #bff;
@@ -81,18 +81,11 @@ nav label {
   text-decoration: none;
 }
 
-nav img {
+.icon {
   height: 32px;
   width: auto;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem;
   display: inline-block;
-  vertical-align: middle;
-}
-
-nav a p,
-nav label p {
-  display: inline-block;
-  margin: 0;
   vertical-align: middle;
 }
 
@@ -154,9 +147,21 @@ main > section {
 h2 {
   font-family: Avenir, sans-serif;
   color: rgba(1, 154, 168, 1);
-
+  float:left;
+  width: 85%;
   margin: 0 0 1rem;
   border-bottom: 1px solid rgba(1, 154, 168, .5);
+}
+
+.icon-wrap {
+  float: left;
+  width: 15%;
+}
+
+.icon-wrap .icon {
+  height: 36px;
+  margin: 0;
+  display: block;
 }
 
 main section h3 {
