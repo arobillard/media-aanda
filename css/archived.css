@@ -156,3 +156,150 @@ nav a:hover {
   }
 
 }
+
+
+/* ROUND TWO */
+
+@media only screen and (min-width: 27em) {
+
+  /* ----- Small-Header ----- */
+
+    .banner {
+      overflow: visible;
+    }
+
+    h1 {
+      padding-left: 1rem;
+      vertical-align: middle;
+    }
+
+    .nav-small {
+      display: none;
+    }
+
+    .nav-med {
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    nav ul {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      display: inline-block;
+      float: none;
+      width: auto;
+      border-bottom: none;
+      position: relative;
+    }
+
+    nav li:first-child {
+      border-top: none;
+    }
+
+    nav a {
+      display: block;
+      padding: .5rem 9vw;
+      color: #bff;
+      font-family: Itim, cursive;
+      font-size: 1.125rem;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 114, 128, 1);
+    }
+
+    nav li:hover .drop-down {
+      display: block;
+    }
+
+    nav li .drop-down {
+      position:absolute;
+      top: 44px;
+      z-index: 10;
+    }
+
+    nav li ul li:last-child {
+      border-bottom: none;
+    }
+
+    nav li ul a {
+      padding-left: 1rem;
+      background-color: rgba(0, 114, 128, 1);
+      text-align: left;
+      width: 15rem;
+    }
+
+    nav li ul a:hover {
+      background-color: rgba(0, 114, 128, .75);
+    }
+
+  /* ----- Small-Main ----- */
+
+  .pictures {
+    overflow: hidden;
+  }
+
+  .pic-vertical {
+    float: left;
+    width: 50%;
+  }
+
+  .pic-left {
+    padding-right: .5rem;
+  }
+
+  .pic-right {
+    padding-left: .5rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* -----Medium+Header ----- */
+
+  h1 {
+    display: inline-block;
+  }
+
+  .nav-med {
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+  }
+
+  nav a {
+    padding: .5rem 1rem;
+  }
+
+  .drop-down {
+    display: none;
+  }
+
+  /* ----- Medium+Main ----- */
+
+  .pictures {
+    overflow: hidden;
+  }
+
+  .pic-vertical {
+    float: left;
+    width: 50%;
+  }
+
+  .pic-left {
+    padding-right: .5rem;
+  }
+
+  .pic-right {
+    padding-left: .5rem;
+  }
+
+}
