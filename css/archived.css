@@ -303,3 +303,93 @@ nav a:hover {
   }
 
 }
+
+
+/* ----- Archived menu ----- */
+
+.b-img {
+  max-height: 100vw;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: rgba(1, 154, 168, 1);
+}
+
+.mast-small,
+.mast-medium {
+  width: 100%;
+  background-color: rgba(1, 154, 168, 1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  border-bottom: 1px solid rgba(0, 114, 128, .5);
+}
+
+nav li:first-child {
+  border-top: 1px solid rgba(0, 114, 128, .5);
+}
+
+nav a,
+nav label {
+  display: block;
+  padding: .5rem 1rem;
+  color: #bff;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.icon {
+  height: 32px;
+  width: auto;
+  margin: 0 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav label {
+  cursor: pointer;
+}
+
+nav a:hover,
+nav label:hover {
+  background-color: rgba(0, 114, 128, 1);
+}
+
+nav li ul li:last-child {
+  border-bottom: none;
+}
+
+nav li ul a {
+  padding-left: 2rem;
+  background-color: rgba(0, 114, 128, .5);
+}
+
+nav li ul a:hover {
+  background-color: rgba(0, 114, 128, .75);
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-check {
+  position: absolute;
+  left: -100rem;
+}
+
+.nav-check:checked ~ .drop-down {
+  display: block;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: rgba(1, 154, 168, .5)
+}
+
+.nav-check:checked ~ .nav-label:hover {
+  background-color: rgba(1, 154, 168, 1);
+}
