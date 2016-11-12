@@ -73,6 +73,7 @@ h4 {
 
 .nav-label .icon {
   display: inline-block;
+  margin: 0;
 }
 
 .nav-check:checked ~ .nav-menu {
